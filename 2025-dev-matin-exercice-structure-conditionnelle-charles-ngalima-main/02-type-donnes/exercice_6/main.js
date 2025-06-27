@@ -1,8 +1,8 @@
-let age=12;
-let nom="bunia";
+let age = 12;
+let nom= "bunia";
 let estConnecte=false;
-let valeurNulle =null;
-let inconnue =undefined;
+let valeurNulle = null;
+let inconnue ;
 
 // Les lignes ne doivent pas être modifiées
 module.exports = {

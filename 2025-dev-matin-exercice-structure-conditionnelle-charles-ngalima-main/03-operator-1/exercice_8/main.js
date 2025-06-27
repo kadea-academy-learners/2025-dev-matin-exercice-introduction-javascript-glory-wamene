@@ -1,16 +1,10 @@
-let salaireMensuel,
-  loyer,
-  nourriture,
-  transport,
-  autresDepenses,
-  totalDepenses,
-  reste;
+let salaireMensuel,loyer, nourriture, transport,autresDepenses, totalDepenses, reste;
 // Ecrivez votre code ici
 salaireMensuel=500;
 loyer=(salaireMensuel*30)/100;
 nourriture=(salaireMensuel*20)/100;
 transport=(salaireMensuel*10)/100;
-autresDepenses=(75-salaireMensuel);
+autresDepenses=75;
 totalDepenses= loyer+nourriture+transport+autresDepenses;
 reste=salaireMensuel-totalDepenses;
 if (reste>=100)
@@ -21,11 +15,11 @@ else{
   console.log("Attention, budget serré");
 }
 //----------------------------------------
-let loisir;
+let loisirs;
 
-loisir=(salaireMensuel*15)/100;
+loisirs=(salaireMensuel*15)/100;
 
-totalDepenses= loyer+nourriture+transport+autresDepenses+loisir;
+totalDepenses= loyer+nourriture+transport+autresDepenses;
 reste=salaireMensuel-totalDepenses;
 //---------------------------
 let pourcentageloyer, pourcentagenourriture,pourcentagetransport,pourcentageautresdepenses,pourcentageloisirs;

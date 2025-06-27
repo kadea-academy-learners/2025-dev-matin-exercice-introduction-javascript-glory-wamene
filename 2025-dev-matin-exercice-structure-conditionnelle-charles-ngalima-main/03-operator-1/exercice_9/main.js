@@ -1,19 +1,30 @@
-let paul, marie, eric, clair, madameMukuna, joseph, sarah,heritage;
+let paul, marie, eric, clair, madameMukuna, joseph, sarah;
 // Ecrivez votre code ici
-paul=(heritage*75)/100
-marie=(heritage*75)/100
-alain=((heritage*75)/100)/2
 
-madameMukuna=(heritage*25)/100
-joseph=(heritage*25)/100
-sarah=(heritage*25)/100
+// Montant total du patrimoine
+const totalPatrimoine = 60000000 + 40000000 + 20000000;
 
-console.log("paul :"+paul)
-console.log("marie :"+marie)
-console.log("alain :"+alain)
-console.log("madame mukuna :"+madameMukuna)
-console.log("joseph :"+joseph)
-console.log("sarah :"+sarah)
+// % par categorie
+const pourcentPremiereCategorie = 0.75;
+const pourcentdeuxiemeCategorie = 0.25;
+
+// Montant à repartir par categorie
+const montantPremiereCategorie = totalPatrimoine * pourcentPremiereCategorie;
+const montantadeuxiemeCategorie = totalPatrimoine * pourcentdeuxiemeCategorie;
+
+// part heritage des enfants vivant (Paul et Marie)
+paul = montantPremiereCategorie / 3;
+marie = montantPremiereCategorie / 3;
+
+// part heritage de eric et clair (enfants de alain qui est decédé)
+eric = (montantPremiereCategorie / 3) / 2;
+clair = (montantPremiereCategorie / 3) / 2;
+
+// part de madameMUKUNA , joseph et sarah
+madameMukuna = montantadeuxiemeCategorie / 3;
+joseph = montantadeuxiemeCategorie / 3;
+sarah = montantadeuxiemeCategorie / 3;
+
 
 // Ne pas modifier le code ci-dessous
 module.exports = {
